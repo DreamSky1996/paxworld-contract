@@ -1,0 +1,39 @@
+{
+  "name": "paxworld",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "npx hardhat compile",
+    "clean": "npx hardhat clean",
+    "deploy:bsctest-pancake-adapter": "npx hardhat run --network bsctest scripts/deploy/adapters/v0-adapter-pancake.js",
+    "deploy:bsctest-lib-bytesManipulation": "npx hardhat run --network bsctest scripts/deploy/libraries/v0-bytesManipulation.js",
+    "deploy:bsctest-router": "npx hardhat run --network bsctest scripts/deploy/routers/v0-router.js",
+    "deploy:bsc": "npx hardhat run --network bsctest scripts/deploy.js",
+    "merge-contracts": "sol-merger \"./contracts/*.sol\" ./build",
+    "merge-contracts-libs": "sol-merger \"./contracts/lib/*.sol\" ./build/lib"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.4.2",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-etherscan": "^2.1.8",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@openzeppelin/test-helpers": "^0.5.12",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.4.1",
+    "hardhat": "^2.8.0",
+    "prettier": "^2.3.2",
+    "prettier-plugin-solidity": "^1.0.0-beta.17",
+    "sol-merger": "^3.1.0",
+    "solhint": "^3.3.6",
+    "solhint-plugin-prettier": "0.0.5"
+  }
+}
