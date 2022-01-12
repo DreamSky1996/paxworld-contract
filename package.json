@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "npx hardhat compile",
     "clean": "npx hardhat clean",
-    "deploy:bsc": "npx hardhat run --network bsctest scripts/deploy.js",
+    "deploy:bsc": "npx hardhat run --network bsc scripts/deploy.js",
+    "deploy:bsctest": "npx hardhat run --network bsctest scripts/deploy.js",
     "merge-contracts": "sol-merger \"./contracts/*.sol\" ./build"
   },
   "keywords": [],
@@ -15,6 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "@openzeppelin/contracts": "^4.4.2",
+    "@openzeppelin/contracts-upgradeable": "^4.4.2",
     "dotenv": "^10.0.0"
   },
   "devDependencies": {

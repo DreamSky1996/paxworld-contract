@@ -13,8 +13,8 @@ contract PaxWorld is Initializable, ERC20Upgradeable, AccessControlUpgradeable, 
     constructor() initializer {}
 
     function initialize() initializer public {
-        ERC20_init("pax.world", "PAXW");
-        AccessControl_init();
+        __ERC20_init("pax.world", "PAXW");
+        __AccessControl_init();
         __UUPSUpgradeable_init();
 
         _mint(msg.sender, 1000000000 * 10 ** decimals());

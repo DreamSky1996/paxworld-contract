@@ -1,0 +1,8 @@
+{
+    "PaxWorld": "0xB747A536D0E3C01aAa5309391c86205344176a2A",
+    "verify command2": "npx hardhat verify --network bsc 0xB747A536D0E3C01aAa5309391c86205344176a2A",
+    "main:url": "https://bscscan.com/address/0xB747A536D0E3C01aAa5309391c86205344176a2A#code",
+    "test PaxWorld": "0x5D9572bA4525b8fCE88cc3990CF1736106d1E521",
+    "verify command for test": "npx hardhat verify --network bsctest 0x5D9572bA4525b8fCE88cc3990CF1736106d1E521",
+    "test:url": "https://testnet.bscscan.com/address/0x5D9572bA4525b8fCE88cc3990CF1736106d1E521#code"
+}
