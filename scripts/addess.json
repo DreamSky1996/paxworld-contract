@@ -1,8 +1,8 @@
 {
-    "PaxWorld": "0xB747A536D0E3C01aAa5309391c86205344176a2A",
-    "verify command2": "npx hardhat verify --network bsc 0xB747A536D0E3C01aAa5309391c86205344176a2A",
-    "main:url": "https://bscscan.com/address/0xB747A536D0E3C01aAa5309391c86205344176a2A#code",
-    "test PaxWorld": "0x5D9572bA4525b8fCE88cc3990CF1736106d1E521",
-    "verify command for test": "npx hardhat verify --network bsctest 0x5D9572bA4525b8fCE88cc3990CF1736106d1E521",
-    "test:url": "https://testnet.bscscan.com/address/0x5D9572bA4525b8fCE88cc3990CF1736106d1E521#code"
+    "PaxWorld": "0x62544EeF6dbB8f893F455b8eC35049C89453f4ec",
+    "verify command": "npx hardhat verify --network bsc 0x62544EeF6dbB8f893F455b8eC35049C89453f4ec",
+    "main:url": "https://bscscan.com/address/0x62544EeF6dbB8f893F455b8eC35049C89453f4ec#code",
+    "test PaxWorld": "0x57B6Bc0101De98Bf98bC5318C3fDb5D40b2d2322",
+    "verify command for test": "npx hardhat verify --network bsctest 0x57B6Bc0101De98Bf98bC5318C3fDb5D40b2d2322",
+    "test:url": "https://testnet.bscscan.com/address/0x57B6Bc0101De98Bf98bC5318C3fDb5D40b2d2322#code"
 }
