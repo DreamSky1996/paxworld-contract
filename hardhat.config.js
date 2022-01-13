@@ -1,5 +1,6 @@
 require("@nomiclabs/hardhat-waffle");
 require("@nomiclabs/hardhat-etherscan");
+require('@openzeppelin/hardhat-upgrades');
 require("dotenv").config();
 const pk_deploy = process.env.PK_BSCTEST_DEPLOYER;
 const pk_bsc_deploy = process.env.PK_BSC_DEPLOYER;
