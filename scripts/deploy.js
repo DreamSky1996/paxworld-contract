@@ -3,16 +3,16 @@ const { ethers, upgrades  } = require("hardhat");
 async function main() {
   const [deployer] = await ethers.getSigners();
   console.log("Deploying contracts with the account: " + deployer.address);
-  const deployed_addres = "0x57B6Bc0101De98Bf98bC5318C3fDb5D40b2d2322";
 
-  // const PaxWorld = await ethers.getContractFactory("PaxWorld");
-  // const paxWorld = await upgrades.deployProxy(PaxWorld, [42]);
-  // await paxWorld.deployed();
+  const PaxWorld = await ethers.getContractFactory("PaxWorld");
+  const paxWorld = await upgrades.deployProxy(PaxWorld);
+  await paxWorld.deployed();
   // Upgrading
-  const PaxWorldV2 = await ethers.getContractFactory("PaxWorldV2");
-  const upgraded = await upgrades.upgradeProxy(deployed_addres, PaxWorldV2);
+  // const paxWorld_address = "0x408dBaAB75d4c1bB49AAD0ff55b59A9738F6af71";
+  // const PaxWorldV2 = await ethers.getContractFactory("PaxWorldV2");
+  // const upgraded = await upgrades.upgradeProxy(paxWorld_address, PaxWorldV2);
 
-  console.log("PaxWorld deployed to:", upgraded.address);
+  console.log("PaxWorld deployed to:", paxWorld.address);
 }
 
 main()

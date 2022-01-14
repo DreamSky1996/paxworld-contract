@@ -1,8 +1,6 @@
 {
-    "PaxWorld": "0x62544EeF6dbB8f893F455b8eC35049C89453f4ec",
-    "verify command": "npx hardhat verify --network bsc 0x62544EeF6dbB8f893F455b8eC35049C89453f4ec",
-    "main:url": "https://bscscan.com/address/0x62544EeF6dbB8f893F455b8eC35049C89453f4ec#code",
-    "test PaxWorld": "0x57B6Bc0101De98Bf98bC5318C3fDb5D40b2d2322",
-    "verify command for test": "npx hardhat verify --network bsctest 0x57B6Bc0101De98Bf98bC5318C3fDb5D40b2d2322",
-    "test:url": "https://testnet.bscscan.com/address/0x57B6Bc0101De98Bf98bC5318C3fDb5D40b2d2322#code"
+    "PaxWorld": "",
+    "main:url": "",
+    "test PaxWorld": "0x408dBaAB75d4c1bB49AAD0ff55b59A9738F6af71",
+    "test:url": "https://testnet.bscscan.com/address/0x408dBaAB75d4c1bB49AAD0ff55b59A9738F6af71#code"
 }
